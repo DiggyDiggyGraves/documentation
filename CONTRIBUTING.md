@@ -2,7 +2,7 @@
 
 This is the documentation for [https://docs.npmjs.com/](https://docs.npmjs.com/). Do you want to contribute a change? Great!
 
-### Table of Contents
+## Table of Contents
 
 - [Quick start](#quick-start)
 - [Running locally](#running-locally)
@@ -17,7 +17,7 @@ This is the documentation for [https://docs.npmjs.com/](https://docs.npmjs.com/)
 2. `npm run develop`: starts the test server at `http://localhost:8000`.
 3. Update the content - it's MDX, which is like Markdown - in the `content` directory.
 4. Review your content at `http://localhost:8000`. (Gatsby watches the filesystem and will reload your content changes immediately.)
-5. Once you're happy, commit it and open a pull request at https://github.com/npm/documentation.
+5. Once you're happy, commit it and open a pull request at [https://github.com/npm/documentation](https://github.com/npm/documentation).
 6. A CI workflow run will publish your PR to a GitHub Preview Page.
 7. Once the content is reviewed, merge the pull request. That will [deploy the site](https://github.com/npm/documentation/actions/workflows/publish.yml).
 
@@ -41,7 +41,7 @@ The `content/cli` directory has the most pages so it tends to be most helpful to
 GATSBY_CONTENT_IGNORE=cli/v6,cli/v7,cli/v8,cli/v9 npm run develop
 ```
 
-**For best results use The latest versions of Node.js and npm**
+### For best results use the latest versions of Node.js and npm
 
 **Gatsby will watch your filesystem looking for updates.** Any content changes you make should be reflected in the site immediately.
 
@@ -88,6 +88,13 @@ m login dialog" />)
 ```
 
 Since MDX is reactive, you can import the shared data at the top of the file, just beneath your frontmatter. It uses the special path `~/shared.js` so it can be imported the same way from any nested file without needing to figure out the appropriate relative path:
+
+'user-login': {
+    'text': (<><Link href="https://www.npmjs.com/login">Log in</Link> to npm
+ with your user account.</>),
+    'image': (<Screenshot src="/shared/user-login.png" alt="Screenshot of np
+m login dialog" />)
+},
 
 ```
 ---
@@ -162,7 +169,7 @@ When a pull request is opened or updated the [GitHub Actions workflow](https://g
 
 ## Deploying changes
 
-The docs site (https://docs.npmjs.com/) is published from a [GitHub Actions workflow](https://github.com/npm/documentation/actions/workflows/publish.yml) on any push into the main branch. That means that the workflow for updating the site is:
+The docs site (<https://docs.npmjs.com/>) is published from a [GitHub Actions workflow](https://github.com/npm/documentation/actions/workflows/publish.yml) on any push into the main branch. That means that the workflow for updating the site is:
 
 1. Make your changes locally, review them, commit them.
 2. Open a pull request for review
