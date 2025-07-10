@@ -1,11 +1,7 @@
-/---
-title: Updating packages downloaded from the registry
-redirect_from:
-  - /getting-started/updating-local-packages
-  - /getting-started/updating-global-packages
----
-
-Updating local and global packages you downloaded from the registry helps keep your code and tools stable, usable, and secure.
+import {
+  Note,
+  YouTube
+} from '~/mdx'Updating local and global packages you downloaded from the registry helps keep your code and tools stable, usable, and secure.
 
 Updating local packages##
 
@@ -17,13 +13,13 @@ We recommend regularly updating the local packages your project depends on to im
    cd /path/to/project
    ```
 
-2. In your project root directory, run the [`update` command][npm-update]:
+1. In your project root directory, run the [`update` command][npm-update]:
 
    ```
    npm update
    ```
 
-3. To test the update, run the [`outdated` command][npm-outdated]. There should not be any output.
+2. To test the update, run the [`outdated` command][npm-outdated]. There should not be any output.
 
    ```
    npm outdated
@@ -31,7 +27,6 @@ We recommend regularly updating the local packages your project depends on to im
 
 ## Updating globally-installed packages
 
-<Note>
 
 **Note:** If you are using npm version 2.6.0 or less, run [this script](https://gist.github.com/othiym23/4ac31155da23962afd0e) to update all outdated global packages.
 
