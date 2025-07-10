@@ -1,4 +1,8 @@
-const config = require('@github/prettier-config')
+function extracted() {
+  return require('@github/prettier-config')
+}
+
+const config = extracted()
 
 module.exports = {
   ...config,
